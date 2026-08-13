@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Portfolio</title>
+<meta name="description" content="Data structures, algorithms, and engineering projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="pre-load">
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="nav-prompt">visitor@portfolio<span class="path">:~$</span></div>
+    <div class="nav-links">
+      <a href="index.html">home</a>
+      <a href="resume.html">resume</a>
+      <a href="projects.html" aria-current="page">projects</a>
+      <span class="nav-icons">
+        <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.1c-3.17.69-3.84-1.44-3.84-1.44-.52-1.32-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17.91-.25 1.89-.38 2.86-.38.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.17 1.82 1.17 3.06 0 4.37-2.66 5.34-5.2 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55C19.76 20.79 23 16.53 23 11.52 23 5.24 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/basil-adam-0b9228429/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<header style="padding:60px 0 10px;">
+  <div class="wrap">
+    <div class="eyebrow">ls -la ./projects</div>
+    <h1 style="font-size:32px;">Projects</h1>
+    <p style="color:var(--text-dim); max-width:60ch;">
+      A mix of data-structure-heavy builds and broader engineering work. Filter by area,
+      or scroll through everything.
+    </p>
+  </div>
+</header>
+
+<main class="wrap" style="padding-bottom:60px;">
+
+  <div class="filter-bar reveal" role="group" aria-label="Filter projects by category">
+    <button class="filter-btn active" data-filter="all">all</button>
+    <button class="filter-btn" data-filter="dsa">data structures &amp; algorithms</button>
+    <button class="filter-btn" data-filter="systems">systems &amp; backend</button>
+    <button class="filter-btn" data-filter="web">web</button>
+    <button class="filter-btn" data-filter="tools">tools &amp; open source</button>
+  </div>
+
+  <p class="proj-count reveal"></p>
+
+  <div class="proj-grid">
+
+    <article class="proj-card reveal" data-tags="dsa">
+      <div class="term-bar">
+        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+        <span class="term-title">graph-pathfinder/</span>
+      </div>
+      <div class="proj-body">
+        <h3>[Graph Pathfinding Visualizer]</h3>
+        <p class="proj-desc">
+          [Describe the project: an interactive visualizer comparing Dijkstra, A*, and BFS
+          on weighted grids, with step-by-step animation of the search frontier.]
+        </p>
+        <div class="proj-meta">
+          <span class="tag on">graphs</span>
+          <span class="tag">priority queue</span>
+          <span class="tag">[language]</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener">↗ source</a>
+          <a href="#">↗ live demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal" data-tags="dsa">
+      <div class="term-bar">
+        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+        <span class="term-title">lru-cache/</span>
+      </div>
+      <div class="proj-body">
+        <h3>[LRU Cache From Scratch]</h3>
+        <p class="proj-desc">
+          [Describe the project: a hash map + doubly linked list implementation
+          achieving O(1) get/put, with benchmarks against a naive array-based version.]
+        </p>
+        <div class="proj-meta">
+          <span class="tag on">hash map</span>
+          <span class="tag">linked list</span>
+          <span class="tag">[language]</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener">↗ source</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal" data-tags="dsa systems">
+      <div class="term-bar">
+        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+        <span class="term-title">bplus-tree-index/</span>
+      </div>
+      <div class="proj-body">
+        <h3>[B+ Tree Storage Index]</h3>
+        <p class="proj-desc">
+          [Describe the project: a disk-backed B+ tree used as the index layer
+          for a toy key-value store, with page splitting and range queries.]
+        </p>
+        <div class="proj-meta">
+          <span class="tag on">trees</span>
+          <span class="tag">storage engines</span>
+          <span class="tag">[language]</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener">↗ source</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal" data-tags="systems">
+      <div class="term-bar">
+        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+        <span class="term-title">task-scheduler/</span>
+      </div>
+      <div class="proj-body">
+        <h3>[Distributed Task Scheduler]</h3>
+        <p class="proj-desc">
+          [Describe the project: a worker-pool scheduler with priority queues,
+          retry/backoff logic, and horizontal scaling across worker nodes.]
+        </p>
+        <div class="proj-meta">
+          <span class="tag on">concurrency</span>
+          <span class="tag">distributed systems</span>
+          <span class="tag">[language]</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener">↗ source</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal" data-tags="web systems">
+      <div class="term-bar">
+        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+        <span class="term-title">rest-api-service/</span>
+      </div>
+      <div class="proj-body">
+        <h3>[REST API Service]</h3>
+        <p class="proj-desc">
+          [Describe the project: a production-style API with auth, rate limiting,
+          and a Postgres-backed data layer, deployed with CI/CD.]
+        </p>
+        <div class="proj-meta">
+          <span class="tag on">API design</span>
+          <span class="tag">databases</span>
+          <span class="tag">[language / framework]</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener">↗ source</a>
+          <a href="#">↗ docs</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal" data-tags="tools">
+      <div class="term-bar">
+        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+        <span class="term-title">cli-tool/</span>
+      </div>
+      <div class="proj-body">
+        <h3>[Developer CLI Tool]</h3>
+        <p class="proj-desc">
+          [Describe the project: a command-line tool that automates a repetitive
+          workflow — packaged and published for others to install.]
+        </p>
+        <div class="proj-meta">
+          <span class="tag on">CLI</span>
+          <span class="tag">open source</span>
+          <span class="tag">[language]</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener">↗ source</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal" data-tags="dsa tools">
+      <div class="term-bar">
+        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+        <span class="term-title">rbtree-visualizer/</span>
+      </div>
+      <div class="proj-body">
+        <h3>[Red-Black Tree Visualizer]</h3>
+        <p class="proj-desc">
+          [Describe the project: an interactive tool showing rotations and
+          recoloring as nodes are inserted and deleted, built for teaching.]
+        </p>
+        <div class="proj-meta">
+          <span class="tag on">trees</span>
+          <span class="tag">visualization</span>
+          <span class="tag">[language]</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener">↗ source</a>
+          <a href="#">↗ live demo</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj-card reveal" data-tags="web">
+      <div class="term-bar">
+        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
+        <span class="term-title">portfolio-site/</span>
+      </div>
+      <div class="proj-body">
+        <h3>[This Portfolio]</h3>
+        <p class="proj-desc">
+          Built with hand-written HTML, CSS, and vanilla JavaScript — including
+          this interactive terminal and the filterable project grid.
+        </p>
+        <div class="proj-meta">
+          <span class="tag on">frontend</span>
+          <span class="tag">no frameworks</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener">↗ source</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="editable-note reveal" style="margin-top:36px;">
+    <strong>Edit me:</strong> replace each bracketed title/description/tag/link above with your
+    real projects. Add or delete <code>&lt;article class="proj-card"&gt;</code> blocks as needed —
+    each one's <code>data-tags</code> attribute controls which filter buttons show it.
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>built with html · css · vanilla js</span>
+    <span>
+      <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener">github</a>
+      &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/basil-adam-0b9228429/" target="_blank" rel="noopener">linkedin</a>
+    </span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
