@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume — Portfolio</title>
+<meta name="description" content="Resume: experience, education, and skills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="pre-load">
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="nav-prompt">visitor@portfolio<span class="path">:~$</span></div>
+    <div class="nav-links">
+      <a href="index.html">home</a>
+      <a href="resume.html" aria-current="page">resume</a>
+      <a href="projects.html">projects</a>
+      <span class="nav-icons">
+        <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.1c-3.17.69-3.84-1.44-3.84-1.44-.52-1.32-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17.91-.25 1.89-.38 2.86-.38.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.17 1.82 1.17 3.06 0 4.37-2.66 5.34-5.2 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55C19.76 20.79 23 16.53 23 11.52 23 5.24 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/basil-adam-0b9228429/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<header style="padding:60px 0 20px;">
+  <div class="wrap">
+    <div class="eyebrow">resume.md</div>
+    <h1 style="font-size:32px;">cat resume.md</h1>
+    <p style="color:var(--text-dim); max-width:60ch;">
+      Rendered below like a terminal reading a markdown file. Download a PDF version for applications, or read it straight from here.
+    </p>
+    <div class="hero-cta" style="margin-top:20px;">
+      <a class="btn primary" href="#" onclick="window.print(); return false;">↓ print / save as pdf</a>
+      <a class="btn" href="https://www.linkedin.com/in/basil-adam-0b9228429/" target="_blank" rel="noopener">view on linkedin</a>
+    </div>
+  </div>
+</header>
+
+<div class="editable-note wrap" style="margin-top:20px; max-width:var(--max-w); margin-left:auto; margin-right:auto;">
+  <strong>Edit me:</strong> every bracketed placeholder below (like <code>[Company Name]</code>) needs your real
+  information. No personal contact details have been added — fill in only what you're comfortable publishing.
+</div>
+
+<main class="wrap">
+  <div class="resume-shell">
+    <nav class="resume-toc reveal" aria-label="Resume sections">
+      <div class="toc-label">// jump to</div>
+      <a href="#summary">summary</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">key projects</a>
+      <a href="#skills">skills</a>
+      <a href="#education">education</a>
+      <a href="#achievements">achievements</a>
+    </nav>
+
+    <div>
+      <section id="summary" class="r-section reveal">
+        <h2>summary</h2>
+        <p style="color:var(--text-dim); font-size:15px; max-width:70ch;">
+          [Add a 2–3 sentence professional summary here — what you build, what you're good at,
+          and what kind of role or problems you're looking for next.]
+        </p>
+      </section>
+
+      <section id="experience" class="r-section reveal">
+        <h2>experience</h2>
+
+        <div class="r-item">
+          <div class="r-item-head">
+            <div>
+              <div class="r-item-title">[Job Title]</div>
+              <div class="r-item-sub">[Company Name] · [Location or Remote]</div>
+            </div>
+            <div class="r-item-date">[Month Year] — [Month Year]</div>
+          </div>
+          <ul>
+            <li>[Impact statement — what you built or improved, with a metric if possible.]</li>
+            <li>[Impact statement — a technical decision you made and why.]</li>
+            <li>[Impact statement — scale, performance, or collaboration outcome.]</li>
+          </ul>
+        </div>
+
+        <div class="r-item">
+          <div class="r-item-head">
+            <div>
+              <div class="r-item-title">[Job Title]</div>
+              <div class="r-item-sub">[Company Name] · [Location or Remote]</div>
+            </div>
+            <div class="r-item-date">[Month Year] — [Month Year]</div>
+          </div>
+          <ul>
+            <li>[Impact statement.]</li>
+            <li>[Impact statement.]</li>
+          </ul>
+        </div>
+
+        <div class="r-item">
+          <div class="r-item-head">
+            <div>
+              <div class="r-item-title">[Job Title / Internship]</div>
+              <div class="r-item-sub">[Company Name] · [Location or Remote]</div>
+            </div>
+            <div class="r-item-date">[Month Year] — [Month Year]</div>
+          </div>
+          <ul>
+            <li>[Impact statement.]</li>
+            <li>[Impact statement.]</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="r-section reveal">
+        <h2>key projects</h2>
+        <div class="r-item">
+          <div class="r-item-head">
+            <div>
+              <div class="r-item-title">[Project Name]</div>
+              <div class="r-item-sub">[One line on what it does and the core data structure / algorithm involved.]</div>
+            </div>
+            <div class="r-item-date">[Year]</div>
+          </div>
+        </div>
+        <div class="r-item">
+          <div class="r-item-head">
+            <div>
+              <div class="r-item-title">[Project Name]</div>
+              <div class="r-item-sub">[One line description.]</div>
+            </div>
+            <div class="r-item-date">[Year]</div>
+          </div>
+        </div>
+        <p style="font-size:13.5px;">See the full write-ups on the <a href="projects.html">projects page →</a></p>
+      </section>
+
+      <section id="skills" class="r-section reveal">
+        <h2>skills</h2>
+        <div class="skill-cols">
+          <div class="skill-row"><span>Languages</span><span>[e.g. Python, Java, C++]</span></div>
+          <div class="skill-row"><span>Data Structures</span><span>trees, graphs, heaps, hash maps</span></div>
+          <div class="skill-row"><span>Algorithms</span><span>DP, greedy, graph traversal</span></div>
+          <div class="skill-row"><span>Systems</span><span>[e.g. Linux, Docker, distributed systems]</span></div>
+          <div class="skill-row"><span>Backend</span><span>[e.g. REST APIs, databases]</span></div>
+          <div class="skill-row"><span>Tools</span><span>[e.g. Git, CI/CD]</span></div>
+        </div>
+      </section>
+
+      <section id="education" class="r-section reveal">
+        <h2>education</h2>
+        <div class="r-item">
+          <div class="r-item-head">
+            <div>
+              <div class="r-item-title">[Degree, Major]</div>
+              <div class="r-item-sub">[School Name]</div>
+            </div>
+            <div class="r-item-date">[Year] — [Year]</div>
+          </div>
+          <ul>
+            <li>[Relevant coursework, honors, or GPA if you'd like to include it.]</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="achievements" class="r-section reveal">
+        <h2>achievements</h2>
+        <ul style="color:var(--text-dim); font-size:14.5px; padding-left:20px;">
+          <li style="margin-bottom:8px;">[Award, certification, competitive-programming rank, or publication.]</li>
+          <li style="margin-bottom:8px;">[Hackathon placement, open-source contribution recognition, etc.]</li>
+          <li>[Anything else worth a line.]</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>built with html · css · vanilla js</span>
+    <span>
+      <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener">github</a>
+      &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/basil-adam-0b9228429/" target="_blank" rel="noopener">linkedin</a>
+    </span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
