@@ -122,3 +122,11 @@ window.addEventListener('scroll', () => {
         nav.style.borderBottomColor = '#1a1a2e';
     }
 });
+// ── Fallback: Show all sections after 2 seconds if they haven't appeared ──
+setTimeout(() => {
+    document.querySelectorAll('.section').forEach((section) => {
+        if (!section.classList.contains('visible')) {
+            section.classList.add('visible');
+        }
+    });
+}, 2000);
