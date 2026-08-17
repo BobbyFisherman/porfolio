@@ -1,180 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio — Software Engineer</title>
-<meta name="description" content="Data structures, algorithms, and software engineering projects.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basil Adam - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="pre-load">
+<body>
 
-<nav class="nav">
-  <div class="wrap">
-    <div class="nav-prompt">visitor@portfolio<span class="path">:~$</span></div>
-    <div class="nav-links">
-      <a href="index.html" aria-current="page">home</a>
-      <a href="resume.html">resume</a>
-      <a href="projects.html">projects</a>
-      <span class="nav-icons">
-        <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.1c-3.17.69-3.84-1.44-3.84-1.44-.52-1.32-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17.91-.25 1.89-.38 2.86-.38.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.17 1.82 1.17 3.06 0 4.37-2.66 5.34-5.2 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55C19.76 20.79 23 16.53 23 11.52 23 5.24 18.27.5 12 .5Z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/basil-adam-0b9228429/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
-        </a>
-      </span>
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ═══════════════════ NAV ═══════════════════ -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-logo">BASIL <span>ADAM</span></div>
+            <div class="nav-links">
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#activities" class="nav-link">Activities</a>
+            </div>
+            <button class="nav-btn" onclick="window.print()">Download Resume</button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════ SCREEN VERSION ═══════════════════ -->
+    <div class="resume-page">
+
+        <header class="header">
+            <div class="header-content">
+                <h1 class="name">BASIL ADAM</h1>
+                <p class="tagline" id="tagline">Student Engineer & Innovator</p>
+                <div class="contact-bar">
+                    <a href="mailto:basilrules2@gmail.com" class="contact-item">
+                        <span class="contact-icon">&gt;_</span>
+                        basilrules2@gmail.com
+                    </a>
+                    <a href="tel:2246001501" class="contact-item">
+                        <span class="contact-icon">#</span>
+                        (224) 600-1501
+                    </a>
+                    <a href="https://github.com/BobbyFisherman" target="_blank" class="contact-item">
+                        <span class="contact-icon">GH</span>
+                        BobbyFisherman
+                    </a>
+                    <a href="https://www.linkedin.com/in/basil-adam-b751a03b7/" target="_blank" class="contact-item">
+                        <span class="contact-icon">in</span>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+
+            <!-- ═══════════════════ EDUCATION ═══════════════════ -->
+            <section class="section" id="education">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Education</h2>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-top">
+                        <div>
+                            <div class="school-name">Vernon Hills High School</div>
+                            <div class="school-info">Vernon Hills, IL — Junior — Class of 2028</div>
+                        </div>
+                        <span class="school-date">2024 — 2028</span>
+                    </div>
+                    <div class="courses-label">Advanced & AP Coursework</div>
+                    <div class="courses-grid">
+                        <span class="course-tag">AP Computer Science A</span>
+                        <span class="course-tag">AP Calculus BC</span>
+                        <span class="course-tag">AP Physics 1 & 2</span>
+                        <span class="course-tag">AP Physics C</span>
+                        <span class="course-tag">AP Chemistry</span>
+                        <span class="course-tag">AP Research</span>
+                        <span class="course-tag">AP Seminar</span>
+                        <span class="course-tag">AP Government</span>
+                        <span class="course-tag">AP Precalculus</span>
+                        <span class="course-tag">AP Psychology</span>
+                        <span class="course-tag">AP Macroeconomics</span>
+                        <span class="course-tag">DC Advanced Topics</span>
+                        <span class="course-tag">French 2 Honors</span>
+                        <span class="course-tag">Honors Biology</span>
+                        <span class="course-tag">Honors Chemistry</span>
+                        <span class="course-tag">Honors Lit & Comp</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+            <section class="section" id="projects">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-top">
+                            <span class="project-name">Sign Language Translation Glasses</span>
+                            <span class="badge badge-award">3rd Place</span>
+                        </div>
+                        <div class="project-sub">VHHS AI Hackathon 2025 — Hardware + ML</div>
+                        <ul>
+                            <li>Designed and 3D printed custom glasses housing a micro-camera to capture real-time 3D hand landmarks from signers</li>
+                            <li>Built a machine learning model on Raspberry Pi 5 (8GB) to classify ASL signs and map them to corresponding words</li>
+                            <li>Integrated wireless micro-transmitter relaying data between a pocket processing unit and the glasses in real time</li>
+                            <li>Engineered dual output system with audio playback through temple speakers and text projection onto the lens</li>
+                        </ul>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-top">
+                            <span class="project-name">Open Braille</span>
+                            <span class="badge badge-progress">In Progress</span>
+                        </div>
+                        <div class="project-sub">Samsung Solve for Tomorrow 2025 — Accessibility</div>
+                        <ul>
+                            <li>Co-developing a device that uses a camera module and ML model to identify printed text and characters</li>
+                            <li>Translates identified characters into physical braille output using an array of 6 solenoids forming a braille cell</li>
+                            <li>Outputs braille letter-by-letter for real-time tactile reading by visually impaired users</li>
+                            <li>Currently in write-up and prototyping phase for the Samsung Solve for Tomorrow competition</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══════════════════ SKILLS ═══════════════════ -->
+            <section class="section" id="skills">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Skills & Tools</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">Programming</div>
+                        <div class="skill-list">
+                            HTML<br>CSS<br>Java<br>JavaScript (Learning)<br>SQL (Planned)
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">Engineering</div>
+                        <div class="skill-list">
+                            Onshape CAD<br>SolidWorks (Planned)<br>3D Printing<br>Woodworking<br>Auto Tech
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">Hardware</div>
+                        <div class="skill-list">
+                            Raspberry Pi<br>Solenoid Systems<br>Micro-Transmitters<br>ML Integration<br>Sensor Arrays
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">Creative</div>
+                        <div class="skill-list">
+                            Nikon D5500<br>Sports Photography<br>Landscape / Scenery<br>Fabrication<br>Prototyping
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══════════════════ ACTIVITIES ═══════════════════ -->
+            <section class="section" id="activities">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Activities & Athletics</h2>
+                </div>
+                <div class="activities-list">
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">Fencing — Varsity Foil</span>
+                            <span class="activity-desc">Varsity placement for Junior and Senior seasons — Competitive tournament fencer</span>
+                        </div>
+                        <span class="activity-date">2026 — 2028</span>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">Soccer</span>
+                            <span class="activity-desc">Active competitive player from Freshman through Senior year</span>
+                        </div>
+                        <span class="activity-date">2024 — 2028</span>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">Math Team</span>
+                            <span class="activity-desc">Competitive mathematics team member</span>
+                        </div>
+                        <span class="activity-date">2025 — 2026</span>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">Science Olympiad</span>
+                            <span class="activity-desc">Planning to join — Interested in engineering and physics events</span>
+                        </div>
+                        <span class="activity-date">PLANNED</span>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">Sports & Landscape Photography</span>
+                            <span class="activity-desc">Nikon D5500 — Pursuing sports and scenery photography</span>
+                        </div>
+                        <span class="activity-date">ONGOING</span>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">Fishing</span>
+                            <span class="activity-desc">Recreational angler and outdoor enthusiast</span>
+                        </div>
+                        <span class="activity-date">ONGOING</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══════════════════ LANGUAGES ═══════════════════ -->
+            <section class="section" id="languages">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Languages</h2>
+                </div>
+                <div class="lang-grid">
+                    <div class="lang-card">
+                        <div class="lang-name">English</div>
+                        <div class="lang-level">Native</div>
+                        <div class="lang-bar"><div class="lang-bar-fill" data-width="100"></div></div>
+                    </div>
+                    <div class="lang-card">
+                        <div class="lang-name">Arabic</div>
+                        <div class="lang-level">Native</div>
+                        <div class="lang-bar"><div class="lang-bar-fill" data-width="100"></div></div>
+                    </div>
+                    <div class="lang-card">
+                        <div class="lang-name">French</div>
+                        <div class="lang-level">Intermediate</div>
+                        <div class="lang-bar"><div class="lang-bar-fill" data-width="45"></div></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══════════════════ INTERESTS ═══════════════════ -->
+            <section class="section" id="interests">
+                <div class="section-header">
+                    <span class="section-number">06</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Fields of Interest</h2>
+                </div>
+                <div class="interests-grid">
+                    <span class="interest-tag">Aerospace Technology</span>
+                    <span class="interest-tag">Astronomy</span>
+                    <span class="interest-tag">Computer Science</span>
+                    <span class="interest-tag">Mechatronics</span>
+                    <span class="interest-tag">Electronics</span>
+                    <span class="interest-tag">Machine Learning</span>
+                    <span class="interest-tag">Accessibility Technology</span>
+                    <span class="interest-tag">3D Printing & Fabrication</span>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <p class="footer-text">
+                Basil Adam <span>—</span> Student Engineer & Innovator <span>—</span> basilrules2@gmail.com
+            </p>
+        </footer>
+
     </div>
-  </div>
-</nav>
 
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="hero-kicker">// data structures &amp; software engineering</div>
-      <h1>Building things that <span class="accent">hold up under load.</span></h1>
-      <p class="lead">
-        I design and build data structures, algorithms, and backend systems —
-        the kind of work that's invisible when it's right and very visible
-        when it's not. This site walks through how I think and what I've built.
-      </p>
-      <div class="hero-cta">
-        <a class="btn primary" href="projects.html">view projects →</a>
-        <a class="btn" href="resume.html">read resume</a>
-      </div>
+    <!-- ═══════════════════ PRINT RESUME VERSION ═══════════════════ -->
+    <div class="print-resume">
+        <div class="print-header">
+            <div class="print-name">BASIL ADAM</div>
+            <div class="print-tagline">Student Engineer & Innovator</div>
+            <div class="print-contact">
+                <span>basilrules2@gmail.com</span>
+                <span>|</span>
+                <span>(224) 600-1501</span>
+                <span>|</span>
+                <a href="https://github.com/BobbyFisherman">github.com/BobbyFisherman</a>
+                <span>|</span>
+                <a href="https://www.linkedin.com/in/basil-adam-b751a03b7/">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="print-section">
+            <div class="print-section-title">Education</div>
+            <div class="print-edu-top">
+                <div>
+                    <div class="print-school">Vernon Hills High School</div>
+                    <div class="print-school-info">Vernon Hills, IL — Junior — Class of 2028</div>
+                </div>
+                <div class="print-date">2024 — 2028</div>
+            </div>
+            <div class="print-courses">
+                <strong>AP & Honors:</strong> AP Computer Science A, AP Calculus BC, AP Physics 1 & 2, AP Physics C, AP Chemistry, AP Research, AP Seminar, AP Government, AP Precalculus, AP Psychology, AP Macroeconomics, DC Advanced Topics, French 2 Honors, Honors Biology, Honors Chemistry, Honors Lit & Comp
+            </div>
+        </div>
+
+        <div class="print-section">
+            <div class="print-section-title">Projects</div>
+            <div class="print-project">
+                <div class="print-project-top">
+                    <div class="print-project-name">Sign Language Translation Glasses</div>
+                    <span class="print-badge print-badge-red">3rd Place</span>
+                </div>
+                <div class="print-project-sub">VHHS AI Hackathon 2025 — Hardware + Machine Learning</div>
+                <ul>
+                    <li>Designed and 3D printed custom glasses with micro-camera capturing real-time 3D hand landmarks</li>
+                    <li>Built ML model on Raspberry Pi 5 (8GB) to classify ASL signs and map to words</li>
+                    <li>Integrated wireless micro-transmitter relaying data between pocket unit and glasses</li>
+                    <li>Dual output: audio via temple speakers and text projection onto lens display</li>
+                </ul>
+            </div>
+            <div class="print-project">
+                <div class="print-project-top">
+                    <div class="print-project-name">Open Braille</div>
+                    <span class="print-badge">In Progress</span>
+                </div>
+                <div class="print-project-sub">Samsung Solve for Tomorrow 2025 — Accessibility Technology</div>
+                <ul>
+                    <li>Co-developing device using camera module and ML model to identify printed text</li>
+                    <li>Translates characters into braille using 6 solenoids forming a braille cell</li>
+                    <li>Real-time letter-by-letter tactile output for visually impaired users</li>
+                    <li>Currently in write-up and prototyping phase</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="print-section">
+            <div class="print-section-title">Skills & Tools</div>
+            <div class="print-skills-grid">
+                <div>
+                    <div class="print-skill-cat">Programming</div>
+                    <div class="print-skill-items">HTML, CSS, Java<br>JavaScript (Learning)<br>SQL (Planned)</div>
+                </div>
+                <div>
+                    <div class="print-skill-cat">Engineering</div>
+                    <div class="print-skill-items">Onshape CAD<br>3D Printing<br>Woodworking, Auto Tech</div>
+                </div>
+                <div>
+                    <div class="print-skill-cat">Hardware</div>
+                    <div class="print-skill-items">Raspberry Pi<br>Solenoid Systems<br>Micro-Transmitters</div>
+                </div>
+                <div>
+                    <div class="print-skill-cat">Creative</div>
+                    <div class="print-skill-items">Nikon D5500<br>Sports Photography<br>Fabrication</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="print-section">
+            <div class="print-section-title">Activities & Athletics</div>
+            <div class="print-activity">
+                <div>
+                    <div class="print-activity-name">Fencing — Varsity Foil</div>
+                    <div class="print-activity-desc">Varsity placement — Competitive tournament fencer</div>
+                </div>
+                <div class="print-activity-date">2026 — 2028</div>
+            </div>
+            <div class="print-activity">
+                <div>
+                    <div class="print-activity-name">Soccer</div>
+                    <div class="print-activity-desc">Competitive player, Freshman through Senior year</div>
+                </div>
+                <div class="print-activity-date">2024 — 2028</div>
+            </div>
+            <div class="print-activity">
+                <div>
+                    <div class="print-activity-name">Math Team</div>
+                    <div class="print-activity-desc">Competitive mathematics team member</div>
+                </div>
+                <div class="print-activity-date">2025 — 2026</div>
+            </div>
+            <div class="print-activity">
+                <div>
+                    <div class="print-activity-name">Sports & Landscape Photography</div>
+                    <div class="print-activity-desc">Nikon D5500 — Sports and scenery photography</div>
+                </div>
+                <div class="print-activity-date">Ongoing</div>
+            </div>
+        </div>
+
+        <div class="print-section">
+            <div class="print-section-title">Languages</div>
+            <div class="print-lang-row">
+                <div class="print-lang"><strong>English</strong> <span>— Native</span></div>
+                <div class="print-lang"><strong>Arabic</strong> <span>— Native</span></div>
+                <div class="print-lang"><strong>French</strong> <span>— Intermediate</span></div>
+            </div>
+        </div>
+
+        <div class="print-section">
+            <div class="print-section-title">Fields of Interest</div>
+            <div class="print-interests">
+                Aerospace Technology · Astronomy · Computer Science · Mechatronics · Electronics · Machine Learning · Accessibility Technology · 3D Printing & Fabrication
+            </div>
+        </div>
     </div>
 
-    <div class="term" id="hero-term" data-boot='[
-      "$ whoami",
-      "software engineer — data structures & systems",
-      "$ ls -la ./focus",
-      "algorithms/  systems/  backend/  open-source/",
-      "$ echo \"try a command below, e.g. help\""
-    ]'>
-      <div class="term-bar">
-        <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
-        <span class="term-title">visitor@portfolio — bash</span>
-      </div>
-      <div class="term-body">
-        <div class="term-output" aria-live="polite"></div>
-        <div class="term-input-row">
-          <span class="prompt">visitor@portfolio</span><span class="path">:~$</span>
-          <input id="term-input" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal command input">
-          <span class="caret" aria-hidden="true"></span>
-        </div>
-        <div class="hint">
-          try <kbd>help</kbd>, <kbd>whoami</kbd>, <kbd>skills</kbd>, <kbd>cd projects</kbd>, <kbd>cat resume</kbd>, <kbd>contact</kbd>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+    <script src="script.js"></script>
 
-<main>
-  <section class="reveal">
-    <div class="wrap">
-      <div class="stat-strip">
-        <div class="stat">
-          <div class="num">[ N ]</div>
-          <div class="label">projects shipped</div>
-        </div>
-        <div class="stat">
-          <div class="num">[ N ]</div>
-          <div class="label">DS &amp; algorithms implemented</div>
-        </div>
-        <div class="stat">
-          <div class="num">[ N ]</div>
-          <div class="label">years of experience</div>
-        </div>
-        <div class="stat">
-          <div class="num">[ N ]</div>
-          <div class="label">languages used in prod</div>
-        </div>
-      </div>
-      <p class="editable-note" style="margin-top:16px;">
-        <strong>Edit me:</strong> replace the bracketed numbers above with your real stats.
-      </p>
-    </div>
-  </section>
-
-  <section class="reveal">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">focus areas</div>
-        <h2>Where the interesting problems are</h2>
-        <p>Three areas this portfolio is built around — swap in what actually reflects your work.</p>
-      </div>
-      <div class="grid">
-        <div class="card">
-          <div class="card-top">
-            <h3>Data Structures &amp; Algorithms</h3>
-            <span class="card-icon">◆</span>
-          </div>
-          <p>Trees, graphs, hashing, and heaps — implemented from scratch and pushed against real performance constraints, not just textbook cases.</p>
-          <div class="tags">
-            <span class="tag">complexity analysis</span>
-            <span class="tag">optimization</span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-top">
-            <h3>Systems &amp; Backend</h3>
-            <span class="card-icon">◆</span>
-          </div>
-          <p>Services and infrastructure designed for correctness first, then throughput — APIs, schedulers, and the plumbing that keeps them honest.</p>
-          <div class="tags">
-            <span class="tag">APIs</span>
-            <span class="tag">concurrency</span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-top">
-            <h3>Tooling &amp; Open Source</h3>
-            <span class="card-icon">◆</span>
-          </div>
-          <p>Small tools and libraries built to make a specific workflow faster — the kind of project that starts as a personal itch.</p>
-          <div class="tags">
-            <span class="tag">CLI</span>
-            <span class="tag">developer tools</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="reveal">
-    <div class="wrap">
-      <div class="term">
-        <div class="term-bar">
-          <span class="term-dot red"></span><span class="term-dot yellow"></span><span class="term-dot green"></span>
-          <span class="term-title">next-steps.sh</span>
-        </div>
-        <div class="term-body">
-          <div><span class="prompt">visitor@portfolio</span><span class="path">:~$</span> <span class="out">cat next-steps.sh</span></div>
-          <div class="comment">#!/bin/sh</div>
-          <div class="out">open ./projects.html   <span class="comment"># see the full project list, filterable by area</span></div>
-          <div class="out">open ./resume.html     <span class="comment"># experience, education, and skills</span></div>
-          <div class="out">open github.com/BobbyFisherman   <span class="comment"># source code</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <span>built with html · css · vanilla js</span>
-    <span>
-      <a href="https://github.com/BobbyFisherman" target="_blank" rel="noopener">github</a>
-      &nbsp;·&nbsp;
-      <a href="https://www.linkedin.com/in/basil-adam-0b9228429/" target="_blank" rel="noopener">linkedin</a>
-    </span>
-  </div>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
