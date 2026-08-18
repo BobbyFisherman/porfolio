@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Voice — Basil Adam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+    <div class="ambient-glow-3"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ═══════════════════ NAV ═══════════════════ -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="../" class="nav-logo">BASIL <span>ADAM</span></a>
+            <div class="nav-links">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#system" class="nav-link">System</a>
+                <a href="#progress" class="nav-link">Progress</a>
+                <a href="#tech" class="nav-link">Tech Stack</a>
+                <a href="#roadmap" class="nav-link">Roadmap</a>
+            </div>
+            <a href="../" class="nav-btn">← Portfolio</a>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════ PAGE ═══════════════════ -->
+    <div class="resume-page">
+
+        <!-- ═══════════════════ HERO ═══════════════════ -->
+        <header class="header">
+            <div class="header-content">
+                <div class="project-badge-row">
+                    <span class="badge badge-progress">In Progress</span>
+                    <span class="badge badge-award">3rd Place — VHHS AI Hackathon 2025</span>
+                </div>
+                <h1 class="name">VISION VOICE</h1>
+                <p class="tagline" id="tagline">Real-Time ASL Translation Glasses</p>
+                <p class="hero-description">
+                    A wearable accessibility system that translates American Sign Language into spoken
+                    and visual communication in real time — combining custom-designed smart glasses,
+                    computer vision, machine learning, and embedded hardware.
+                </p>
+                <div class="contact-bar">
+                    <a href="https://github.com/BobbyFisherman" target="_blank" class="contact-item">
+                        <span class="contact-icon">GH</span>
+                        Source Code
+                    </a>
+                    <span class="contact-item">
+                        <span class="contact-icon">HW</span>
+                        Hardware + ML
+                    </span>
+                    <span class="contact-item">
+                        <span class="contact-icon">Pi</span>
+                        Raspberry Pi 5
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+
+            <!-- ═══════════════════ OVERVIEW ═══════════════════ -->
+            <section class="section" id="overview">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Project Overview</h2>
+                </div>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="overview-icon">◎</div>
+                        <div class="overview-label">Problem</div>
+                        <div class="overview-text">
+                            Over 500,000 people in the US use ASL as their primary language, yet most
+                            hearing individuals cannot understand sign language — creating a persistent
+                            communication barrier in daily life.
+                        </div>
+                    </div>
+                    <div class="overview-card">
+                        <div class="overview-icon">⚡</div>
+                        <div class="overview-label">Solution</div>
+                        <div class="overview-text">
+                            Vision Voice is a pair of smart glasses that watches a signer's hands,
+                            recognizes ASL gestures in real time, and instantly outputs the translation
+                            as both spoken audio and projected text — no phone or screen needed.
+                        </div>
+                    </div>
+                    <div class="overview-card">
+                        <div class="overview-icon">▲</div>
+                        <div class="overview-label">Goal</div>
+                        <div class="overview-text">
+                            Create an affordable, self-contained wearable that makes ASL communication
+                            accessible to everyone — bridging the gap between Deaf and hearing
+                            communities seamlessly.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══════════════════ SYSTEM ARCHITECTURE ═══════════════════ -->
+            <section class="section" id="system">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">System Architecture</h2>
+                </div>
+
+                <!-- Pipeline Flow -->
+                <div class="pipeline">
+                    <div class="pipeline-step">
+                        <div class="pipeline-icon">👐</div>
+                        <div class="pipeline-label">Signer</div>
+                        <div class="pipeline-sub">ASL Gestures</div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-icon">📷</div>
+                        <div class="pipeline-label">Micro-Camera</div>
+                        <div class="pipeline-sub">3D Hand Landmarks</div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-icon">📡</div>
+                        <div class="pipeline-label">Transmitter</div>
+                        <div class="pipeline-sub">Wireless Relay</div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-icon">🧠</div>
+                        <div class="pipeline-label">Raspberry Pi 5</div>
+                        <div class="pipeline-sub">ML Classification</div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-icon">🔊</div>
+                        <div class="pipeline-label">Dual Output</div>
+                        <div class="pipeline-sub">Audio + Text</div>
+                    </div>
+                </div>
+
+                <!-- Component Cards -->
+                <div class="system-grid">
+                    <div class="system-card">
+                        <div class="system-card-header">
+                            <span class="system-card-number">01</span>
+                            <span class="system-card-title">Custom Glasses Frame</span>
+                        </div>
+                        <p class="system-card-text">
+                            Designed in Onshape and 3D printed to house a micro-camera module, wireless
+                            transmitter, temple-mounted speakers, and a lens-mounted micro-display — all
+                            integrated into a wearable form factor.
+                        </p>
+                        <div class="system-tags">
+                            <span class="system-tag">3D Printed</span>
+                            <span class="system-tag">Onshape CAD</span>
+                            <span class="system-tag">Custom Housing</span>
+                        </div>
+                    </div>
+                    <div class="system-card">
+                        <div class="system-card-header">
+                            <span class="system-card-number">02</span>
+                            <span class="system-card-title">Computer Vision Pipeline</span>
+                        </div>
+                        <p class="system-card-text">
+                            A micro-camera captures the signer's hands and feeds frames to MediaPipe for
+                            real-time 3D hand landmark extraction — producing 21 landmark points per hand
+                            at high frame rates.
+                        </p>
+                        <div class="system-tags">
+                            <span class="system-tag">MediaPipe</span>
+                            <span class="system-tag">21 Landmarks</span>
+                            <span class="system-tag">Real-Time</span>
+                        </div>
+                    </div>
+                    <div class="system-card">
+                        <div class="system-card-header">
+                            <span class="system-card-number">03</span>
+                            <span class="system-card-title">ML Classification Engine</span>
+                        </div>
+                        <p class="system-card-text">
+                            A trained machine learning model running on the Raspberry Pi 5 (8GB) receives
+                            landmark data and classifies ASL signs, mapping each recognized gesture to its
+                            corresponding English word in real time.
+                        </p>
+                        <div class="system-tags">
+                            <span class="system-tag">Raspberry Pi 5</span>
+                            <span class="system-tag">8GB RAM</span>
+                            <span class="system-tag">Python</span>
+                        </div>
+                    </div>
+                    <div class="system-card">
+                        <div class="system-card-header">
+                            <span class="system-card-number">04</span>
+                            <span class="system-card-title">Dual Output System</span>
+                        </div>
+                        <p class="system-card-text">
+                            Translated words are delivered through two channels simultaneously — audio
+                            playback via speakers built into the glasses' temples, and text projection
+                            onto a micro-display mounted on the inner lens.
+                        </p>
+                        <div class="system-tags">
+                            <span class="system-tag">Temple Speakers</span>
+                            <span class="system-tag">Lens Display</span>
+                            <span class="system-tag">Dual Channel</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══════════════════ PROGRESS ═══════════════════ -->
+            <section class="section" id="progress">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Current Progress</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-status">Completed</div>
+                            <div class="timeline-title">3D-Printed Glasses Prototype</div>
+                            <div class="timeline-desc">
+                                Designed and printed custom glasses frame housing the micro-camera,
+                                transmitter cavity, speaker channels, and display mount. Multiple
+                                iterations for fit and component clearance.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-status">Completed</div>
+                            <div class="timeline-title">Hand Landmark Detection</div>
+                            <div class="timeline-desc">
+                                Integrated micro-camera with MediaPipe to capture and extract real-time
+                                3D hand landmarks (21 points per hand) from live video feed.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-status">Completed</div>
+                            <div class="timeline-title">ASL Classification Model</div>
+                            <div class="timeline-desc">
+                                Built and trained a machine learning model on Raspberry Pi 5 (8GB) to
+                                classify ASL signs from landmark data and map gestures to English words.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-status">Completed</div>
+                            <div class="timeline-title">Wireless Data Relay</div>
+                            <div class="timeline-desc">
+                                Integrated wireless micro-transmitter to relay processed data between the
+                                glasses and pocket processing unit in real time with minimal latency.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-status">Completed</div>
+                            <div class="timeline-title">Dual Output Integration</div>
+                            <div class="timeline-desc">
+                                Engineered audio output through temple-mounted speakers and text
+                                projection onto the lens micro-display — both channels working
+                                simultaneously from classified output.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item active">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-status">In Progress</div>
+                            <div class="timeline-title">Refinement & Optimization</div>
+                            <div class="timeline-desc">
+                                Currently refining recognition accuracy, reducing inference latency,
+                                improving hardware packaging, and enhancing the overall wearable
+                                experience for practical daily use.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══════════════════ TECH STACK ═══════════════════ -->
+            <section class="section" id="tech">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Tech Stack</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">Hardware</div>
+                        <div class="skill-list">
+                            Raspberry Pi 5 (8GB)<br>
+                            Micro-Camera Module<br>
+                            Wireless Micro-Transmitter<br>
+                            Temple Speakers<br>
+                            Lens Micro-Display
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">Software</div>
+                        <div class="skill-list">
+                            Python<br>
+                            MediaPipe<br>
+                            OpenCV<br>
+                            TensorFlow / Keras<br>
+                            NumPy
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">Fabrication</div>
+                        <div class="skill-list">
+                            Onshape CAD<br>
+                            3D Printing (FDM)<br>
+                            Custom PCB Layout<br>
+                            Soldering<br>
+                            Iterative Prototyping
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">Comms</div>
+                        <div class="skill-list">
+                            Bluetooth / RF Link<br>
+                            Serial Protocol<br>
+                            Low-Latency Streaming<br>
+                            Pocket Unit ↔ Glasses<br>
+                            Real-Time Pipeline
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══════════════════ ROADMAP ═══════════════════ -->
+            <section class="section" id="roadmap">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Roadmap</h2>
+                </div>
+                <div class="activities-list">
+                    <div class="activity-row roadmap-done">
+                        <div class="activity-left">
+                            <span class="activity-name">✓ Core Prototype</span>
+                            <span class="activity-desc">Glasses frame, camera, ML model, transmitter, dual output</span>
+                        </div>
+                        <span class="activity-date">DONE</span>
+                    </div>
+                    <div class="activity-row roadmap-done">
+                        <div class="activity-left">
+                            <span class="activity-name">✓ Hackathon Demo</span>
+                            <span class="activity-desc">Live demonstration at VHHS AI Hackathon 2025 — 3rd Place finish</span>
+                        </div>
+                        <span class="activity-date">DONE</span>
+                    </div>
+                    <div class="activity-row roadmap-active">
+                        <div class="activity-left">
+                            <span class="activity-name">→ Accuracy & Latency Optimization</span>
+                            <span class="activity-desc">Expanding training data, model tuning, reducing end-to-end delay</span>
+                        </div>
+                        <span class="activity-date">NOW</span>
+                    </div>
+                    <div class="activity-row roadmap-active">
+                        <div class="activity-left">
+                            <span class="activity-name">→ Hardware Miniaturization</span>
+                            <span class="activity-desc">Smaller PCB, improved cable routing, lighter frame revision</span>
+                        </div>
+                        <span class="activity-date">NOW</span>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">Expanded Vocabulary</span>
+                            <span class="activity-desc">Support for full ASL alphabet, common phrases, and dynamic gestures</span>
+                        </div>
+                        <span class="activity-date">NEXT</span>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">User Testing</span>
+                            <span class="activity-desc">Field testing with ASL users and accessibility feedback loops</span>
+                        </div>
+                        <span class="activity-date">PLANNED</span>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">Open Source Release</span>
+                            <span class="activity-desc">Publishing CAD files, ML model, and build guide for the community</span>
+                        </div>
+                        <span class="activity-date">PLANNED</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <p class="footer-text">
+                Vision Voice <span>—</span> Basil Adam <span>—</span> Real-Time ASL Translation Glasses
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
