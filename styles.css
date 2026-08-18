@@ -1101,4 +1101,26 @@ body::before {
     .nav-links {
         display: none;
     }
+   /* ── PROJECT LINK BUTTON ── */
+.project-link-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 8px 20px;
+    font-size: 0.68rem;
+    color: var(--white);
+    background: var(--purple-mid);
+    border: 1px solid var(--purple-bright);
+    border-radius: 4px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.project-link-btn:hover {
+    background: var(--purple-bright);
+    box-shadow: 0 0 20px var(--purple-glow);
+}
 }
