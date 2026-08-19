@@ -20,9 +20,10 @@
             <a href="../" class="nav-logo">BASIL <span>ADAM</span></a>
             <div class="nav-links">
                 <a href="#overview" class="nav-link">Overview</a>
-                <a href="#system" class="nav-link">System</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#hardware" class="nav-link">Hardware</a>
+                <a href="#software" class="nav-link">Software</a>
                 <a href="#progress" class="nav-link">Progress</a>
-                <a href="#tech" class="nav-link">Tech Stack</a>
                 <a href="#roadmap" class="nav-link">Roadmap</a>
             </div>
             <a href="../" class="nav-btn">← Portfolio</a>
@@ -36,29 +37,37 @@
         <header class="header">
             <div class="header-content">
                 <div class="project-badge-row">
-                    <span class="badge badge-progress">In Progress</span>
-                    <span class="badge badge-award">3rd Place — VHHS AI Hackathon 2025</span>
+                    <span class="badge badge-progress">In Development</span>
+                    <span class="badge badge-meta">Solo Project</span>
+                    <span class="badge badge-meta">~$150 Budget</span>
                 </div>
                 <h1 class="name">VISION VOICE</h1>
-                <p class="tagline" id="tagline">Real-Time ASL Translation Glasses</p>
+                <p class="tagline" id="tagline">Wearable ASL-to-English Translation Glasses</p>
                 <p class="hero-description">
-                    A wearable accessibility system that translates American Sign Language into spoken
-                    and visual communication in real time — combining custom-designed smart glasses,
-                    computer vision, machine learning, and embedded hardware.
+                    Vision Voice is a pair of smart glasses that watches a signer's hands through a
+                    built-in camera, recognizes American Sign Language in real time, and translates it
+                    into English — outputting the result as spoken audio through temple speakers, projected
+                    text on the lens, or both. It is designed for deaf and hard-of-hearing users who
+                    struggle with lip reading and need a hands-free, always-on way to understand the
+                    people around them.
                 </p>
-                <div class="contact-bar">
-                    <a href="https://github.com/BobbyFisherman" target="_blank" class="contact-item">
-                        <span class="contact-icon">GH</span>
-                        Source Code
-                    </a>
-                    <span class="contact-item">
-                        <span class="contact-icon">HW</span>
-                        Hardware + ML
-                    </span>
-                    <span class="contact-item">
-                        <span class="contact-icon">Pi</span>
-                        Raspberry Pi 5
-                    </span>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">1 Month</div>
+                        <div class="hero-stat-label">Until Hackathon</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">50–100</div>
+                        <div class="hero-stat-label">Target ASL Words</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">~$150</div>
+                        <div class="hero-stat-label">Total Budget</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">24 hrs</div>
+                        <div class="hero-stat-label">Hackathon Length</div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -70,144 +79,344 @@
                 <div class="section-header">
                     <span class="section-number">01</span>
                     <div class="section-line"></div>
-                    <h2 class="section-title">Project Overview</h2>
+                    <h2 class="section-title">The Problem</h2>
                 </div>
                 <div class="overview-grid">
                     <div class="overview-card">
                         <div class="overview-icon">◎</div>
-                        <div class="overview-label">Problem</div>
+                        <div class="overview-label">The Gap</div>
                         <div class="overview-text">
-                            Over 500,000 people in the US use ASL as their primary language, yet most
-                            hearing individuals cannot understand sign language — creating a persistent
-                            communication barrier in daily life.
+                            Over 500,000 people in the United States use American Sign Language as their
+                            primary language. But the vast majority of hearing people do not understand ASL.
+                            When a deaf person is in a conversation with someone who doesn't sign, they are
+                            often forced to rely on lip reading — which is unreliable, exhausting, and only
+                            about 30% accurate even in ideal conditions.
                         </div>
                     </div>
                     <div class="overview-card">
                         <div class="overview-icon">⚡</div>
-                        <div class="overview-label">Solution</div>
+                        <div class="overview-label">The Solution</div>
                         <div class="overview-text">
-                            Vision Voice is a pair of smart glasses that watches a signer's hands,
-                            recognizes ASL gestures in real time, and instantly outputs the translation
-                            as both spoken audio and projected text — no phone or screen needed.
+                            Vision Voice is a pair of lightweight glasses with a tiny built-in camera. When
+                            someone signs in front of the wearer, the camera captures their hand movements,
+                            a machine learning model identifies what word they are signing, and the translation
+                            is delivered instantly — either as audio through speakers in the temples of the
+                            glasses, as text projected onto the bottom of the lens, or both at the same time.
+                            No phone screen. No interpreter. Just glasses.
                         </div>
                     </div>
                     <div class="overview-card">
                         <div class="overview-icon">▲</div>
-                        <div class="overview-label">Goal</div>
+                        <div class="overview-label">The Goal</div>
                         <div class="overview-text">
-                            Create an affordable, self-contained wearable that makes ASL communication
-                            accessible to everyone — bridging the gap between Deaf and hearing
-                            communities seamlessly.
+                            Build a working wearable prototype within one month on a roughly $150 budget
+                            that can recognize 50 to 100 ASL words — enough to carry a basic conversation.
+                            The glasses should be comfortable enough to wear like normal glasses, with all
+                            processing handled by a small pocket unit connected wirelessly. The prototype
+                            will be demonstrated at the VHHS 24-hour hackathon.
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- ═══════════════════ SYSTEM ARCHITECTURE ═══════════════════ -->
-            <section class="section" id="system">
+            <!-- ═══════════════════ HOW IT WORKS ═══════════════════ -->
+            <section class="section" id="how-it-works">
                 <div class="section-header">
                     <span class="section-number">02</span>
                     <div class="section-line"></div>
-                    <h2 class="section-title">System Architecture</h2>
+                    <h2 class="section-title">How It Works</h2>
                 </div>
 
-                <!-- Pipeline Flow -->
                 <div class="pipeline">
                     <div class="pipeline-step">
-                        <div class="pipeline-icon">👐</div>
-                        <div class="pipeline-label">Signer</div>
-                        <div class="pipeline-sub">ASL Gestures</div>
+                        <div class="pipeline-number">1</div>
+                        <div class="pipeline-label">Capture</div>
+                        <div class="pipeline-sub">Camera sees hands</div>
                     </div>
                     <div class="pipeline-arrow">→</div>
                     <div class="pipeline-step">
-                        <div class="pipeline-icon">📷</div>
-                        <div class="pipeline-label">Micro-Camera</div>
-                        <div class="pipeline-sub">3D Hand Landmarks</div>
+                        <div class="pipeline-number">2</div>
+                        <div class="pipeline-label">Detect</div>
+                        <div class="pipeline-sub">OpenCV finds landmarks</div>
                     </div>
                     <div class="pipeline-arrow">→</div>
                     <div class="pipeline-step">
-                        <div class="pipeline-icon">📡</div>
-                        <div class="pipeline-label">Transmitter</div>
-                        <div class="pipeline-sub">Wireless Relay</div>
+                        <div class="pipeline-number">3</div>
+                        <div class="pipeline-label">Transmit</div>
+                        <div class="pipeline-sub">Data sent to pocket unit</div>
                     </div>
                     <div class="pipeline-arrow">→</div>
                     <div class="pipeline-step">
-                        <div class="pipeline-icon">🧠</div>
-                        <div class="pipeline-label">Raspberry Pi 5</div>
-                        <div class="pipeline-sub">ML Classification</div>
+                        <div class="pipeline-number">4</div>
+                        <div class="pipeline-label">Classify</div>
+                        <div class="pipeline-sub">ML model identifies sign</div>
                     </div>
                     <div class="pipeline-arrow">→</div>
                     <div class="pipeline-step">
-                        <div class="pipeline-icon">🔊</div>
-                        <div class="pipeline-label">Dual Output</div>
-                        <div class="pipeline-sub">Audio + Text</div>
+                        <div class="pipeline-number">5</div>
+                        <div class="pipeline-label">Output</div>
+                        <div class="pipeline-sub">Audio + text to wearer</div>
                     </div>
                 </div>
 
-                <!-- Component Cards -->
-                <div class="system-grid">
-                    <div class="system-card">
-                        <div class="system-card-header">
-                            <span class="system-card-number">01</span>
-                            <span class="system-card-title">Custom Glasses Frame</span>
-                        </div>
-                        <p class="system-card-text">
-                            Designed in Onshape and 3D printed to house a micro-camera module, wireless
-                            transmitter, temple-mounted speakers, and a lens-mounted micro-display — all
-                            integrated into a wearable form factor.
-                        </p>
-                        <div class="system-tags">
-                            <span class="system-tag">3D Printed</span>
-                            <span class="system-tag">Onshape CAD</span>
-                            <span class="system-tag">Custom Housing</span>
+                <div class="how-detail-grid">
+                    <div class="how-detail-card">
+                        <div class="how-detail-step">Step 1 — Capture</div>
+                        <div class="how-detail-text">
+                            A Raspberry Pi Camera Module (ZeroCam) is mounted on the glasses frame.
+                            It continuously captures video of the person in front of the wearer,
+                            focused on their hands and upper body where ASL signs occur.
                         </div>
                     </div>
-                    <div class="system-card">
-                        <div class="system-card-header">
-                            <span class="system-card-number">02</span>
-                            <span class="system-card-title">Computer Vision Pipeline</span>
-                        </div>
-                        <p class="system-card-text">
-                            A micro-camera captures the signer's hands and feeds frames to MediaPipe for
-                            real-time 3D hand landmark extraction — producing 21 landmark points per hand
-                            at high frame rates.
-                        </p>
-                        <div class="system-tags">
-                            <span class="system-tag">MediaPipe</span>
-                            <span class="system-tag">21 Landmarks</span>
-                            <span class="system-tag">Real-Time</span>
+                    <div class="how-detail-card">
+                        <div class="how-detail-step">Step 2 — Detect</div>
+                        <div class="how-detail-text">
+                            Each video frame is processed using OpenCV to detect and extract hand
+                            landmarks — 21 individual points per hand that map the shape, position,
+                            and orientation of every finger and the palm. These landmarks are what the
+                            machine learning model uses to understand the sign, not the raw image itself.
                         </div>
                     </div>
-                    <div class="system-card">
-                        <div class="system-card-header">
-                            <span class="system-card-number">03</span>
-                            <span class="system-card-title">ML Classification Engine</span>
-                        </div>
-                        <p class="system-card-text">
-                            A trained machine learning model running on the Raspberry Pi 5 (8GB) receives
-                            landmark data and classifies ASL signs, mapping each recognized gesture to its
-                            corresponding English word in real time.
-                        </p>
-                        <div class="system-tags">
-                            <span class="system-tag">Raspberry Pi 5</span>
-                            <span class="system-tag">8GB RAM</span>
-                            <span class="system-tag">Python</span>
+                    <div class="how-detail-card">
+                        <div class="how-detail-step">Step 3 — Transmit</div>
+                        <div class="how-detail-text">
+                            The landmark data is sent wirelessly from the glasses to a pocket-sized
+                            processing unit the wearer carries. The current plan is to use an ESP32
+                            microcontroller on the glasses side, which encodes the landmark coordinates
+                            and transmits them over a short-range wireless link. Only landmark data is
+                            sent — not full images — keeping the data small and the connection fast.
                         </div>
                     </div>
-                    <div class="system-card">
-                        <div class="system-card-header">
-                            <span class="system-card-number">04</span>
-                            <span class="system-card-title">Dual Output System</span>
+                    <div class="how-detail-card">
+                        <div class="how-detail-step">Step 4 — Classify</div>
+                        <div class="how-detail-text">
+                            The pocket unit runs a Raspberry Pi 5 (8GB) with a custom-trained machine
+                            learning model. The model receives the hand landmark coordinates and classifies
+                            them as a specific ASL word. Each word in the vocabulary is trained on roughly
+                            100 sample recordings of the sign being performed in different positions, angles,
+                            and distances — so the model can recognize the sign even if the signer's hands
+                            are slightly higher, lower, closer, or farther apart than the training data.
                         </div>
-                        <p class="system-card-text">
-                            Translated words are delivered through two channels simultaneously — audio
-                            playback via speakers built into the glasses' temples, and text projection
-                            onto a micro-display mounted on the inner lens.
-                        </p>
-                        <div class="system-tags">
-                            <span class="system-tag">Temple Speakers</span>
-                            <span class="system-tag">Lens Display</span>
-                            <span class="system-tag">Dual Channel</span>
+                    </div>
+                    <div class="how-detail-card">
+                        <div class="how-detail-step">Step 5 — Output</div>
+                        <div class="how-detail-text">
+                            The recognized word is delivered to the wearer through two channels. Small
+                            speakers built into the temples of the glasses play the word as audio. At the
+                            same time, a micro-projector mounted behind the lens projects the word as text
+                            onto the bottom of the lens — visible only to the wearer, like a heads-up display.
+                            If the wearer is deaf, they can disable audio and use only text. If they are blind,
+                            they can disable text and use only audio. By default both run simultaneously.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ═══════════════════ HARDWARE ═══════════════════ -->
+            <section class="section" id="hardware">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Hardware</h2>
+                </div>
+
+                <div class="hw-intro">
+                    The physical design is inspired by Meta Ray-Ban smart glasses — the goal is a
+                    normal-looking pair of glasses that someone could wear all day without drawing
+                    attention. The frame will be 3D printed in black PETG, chosen for its durability,
+                    slight flexibility, heat resistance, and lightweight feel compared to PLA. The
+                    frame will go through multiple print iterations to get the fit, weight distribution,
+                    and component clearances right.
+                </div>
+
+                <div class="hw-grid">
+                    <div class="hw-card">
+                        <div class="hw-card-header">
+                            <span class="hw-card-icon">📷</span>
+                            <span class="hw-card-title">ZeroCam (Raspberry Pi Camera Module)</span>
+                        </div>
+                        <div class="hw-card-role">Captures video of signer's hands</div>
+                        <div class="hw-card-text">
+                            Small camera module mounted on the glasses frame — either on the bridge
+                            (nose area) for the best centered view of the signer's hands and face, or
+                            on the side temple like Meta glasses for easier internal wiring. Final
+                            placement will be decided during prototyping based on field of view and
+                            wiring constraints.
+                        </div>
+                        <div class="hw-card-status">Planned — camera selected, mount position in testing</div>
+                    </div>
+                    <div class="hw-card">
+                        <div class="hw-card-header">
+                            <span class="hw-card-icon">📡</span>
+                            <span class="hw-card-title">ESP32 Microcontroller</span>
+                        </div>
+                        <div class="hw-card-role">On-glasses processor and wireless transmitter</div>
+                        <div class="hw-card-text">
+                            Sits inside the glasses frame. Receives raw camera frames, runs OpenCV
+                            hand landmark detection to extract 21-point hand coordinates, then
+                            transmits only the lightweight landmark data wirelessly to the pocket
+                            processing unit. By processing on the glasses and sending only coordinates
+                            instead of full images, the wireless link stays fast and low-latency.
+                        </div>
+                        <div class="hw-card-status">Planned — evaluating ESP32 vs dedicated micro-transmitter</div>
+                    </div>
+                    <div class="hw-card">
+                        <div class="hw-card-header">
+                            <span class="hw-card-icon">🧠</span>
+                            <span class="hw-card-title">Raspberry Pi 5 (8GB)</span>
+                        </div>
+                        <div class="hw-card-role">Pocket processing unit — runs ML classification</div>
+                        <div class="hw-card-text">
+                            The brain of the system. Carried in the wearer's pocket or clipped nearby.
+                            Receives hand landmark data wirelessly from the glasses, runs the trained
+                            machine learning model to classify the ASL sign, then sends the recognized
+                            word back to the glasses for audio and text output. The 8GB model was chosen
+                            for enough memory to run the ML model smoothly.
+                        </div>
+                        <div class="hw-card-status">Available — provided as existing hardware</div>
+                    </div>
+                    <div class="hw-card">
+                        <div class="hw-card-header">
+                            <span class="hw-card-icon">🔊</span>
+                            <span class="hw-card-title">Temple Speakers</span>
+                        </div>
+                        <div class="hw-card-role">Audio output — speaks the translated word</div>
+                        <div class="hw-card-text">
+                            Small, budget-friendly speakers mounted inside the temple arms of the
+                            glasses, pointed toward the wearer's ears. When a sign is recognized, the
+                            word is played as spoken audio. Speaker selection will prioritize
+                            reliability, small size, and low power draw within budget.
+                        </div>
+                        <div class="hw-card-status">Planned — researching small reliable drivers</div>
+                    </div>
+                    <div class="hw-card">
+                        <div class="hw-card-header">
+                            <span class="hw-card-icon">💡</span>
+                            <span class="hw-card-title">Micro-Projector + Lens</span>
+                        </div>
+                        <div class="hw-card-role">Text output — projects translated word onto lens</div>
+                        <div class="hw-card-text">
+                            A tiny projector mounted behind and slightly above the lens projects text
+                            onto the bottom portion of the lens. The projection is only visible to the
+                            wearer — like a heads-up display. By projecting onto the bottom of the lens,
+                            the projection distance is minimized and the text stays out of the wearer's
+                            main line of sight until they glance down.
+                        </div>
+                        <div class="hw-card-status">Planned — researching micro-projector options within budget</div>
+                    </div>
+                    <div class="hw-card">
+                        <div class="hw-card-header">
+                            <span class="hw-card-icon">🖨️</span>
+                            <span class="hw-card-title">3D Printed Frame (PETG)</span>
+                        </div>
+                        <div class="hw-card-role">Houses all components in a wearable form factor</div>
+                        <div class="hw-card-text">
+                            Custom-designed frame modeled to hold the camera, ESP32, speakers, and
+                            projector while remaining lightweight and comfortable. Printed in black
+                            PETG for its balance of strength, slight flex (won't snap when put on or
+                            taken off), heat resistance (won't warp from electronics), and smooth
+                            finish. Multiple iterations expected to nail the fit.
+                        </div>
+                        <div class="hw-card-status">Planned — CAD design in progress</div>
+                    </div>
+                </div>
+
+                <div class="budget-bar">
+                    <div class="budget-label">Estimated Budget</div>
+                    <div class="budget-breakdown">
+                        <span class="budget-item">Raspberry Pi 5 (8GB) — provided</span>
+                        <span class="budget-item">ZeroCam — ~$15</span>
+                        <span class="budget-item">ESP32 — ~$8</span>
+                        <span class="budget-item">Speakers — ~$5–10</span>
+                        <span class="budget-item">Micro-projector — ~$30–60</span>
+                        <span class="budget-item">PETG filament — ~$10</span>
+                        <span class="budget-item">Wiring / connectors — ~$10</span>
+                    </div>
+                    <div class="budget-total">Target Total: ~$80–115 (under $150 cap)</div>
+                </div>
+            </section>
+
+            <!-- ═══════════════════ SOFTWARE ═══════════════════ -->
+            <section class="section" id="software">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <div class="section-line"></div>
+                    <h2 class="section-title">Software</h2>
+                </div>
+
+                <div class="sw-grid">
+                    <div class="sw-card">
+                        <div class="sw-card-header">
+                            <span class="sw-card-number">01</span>
+                            <span class="sw-card-title">Hand Landmark Detection</span>
+                        </div>
+                        <div class="sw-card-text">
+                            OpenCV is used to process each camera frame and identify hand landmarks.
+                            For every hand in frame, it extracts 21 coordinate points — the tip, knuckle,
+                            and base of each finger, plus the wrist. These 21 points create a skeleton
+                            map of the hand's shape and position. This is the raw data the ML model uses.
+                            The model never sees the actual image — only the landmark coordinates.
+                        </div>
+                        <div class="sw-tags">
+                            <span class="sw-tag">OpenCV</span>
+                            <span class="sw-tag">21 Landmarks Per Hand</span>
+                            <span class="sw-tag">Real-Time</span>
+                        </div>
+                    </div>
+                    <div class="sw-card">
+                        <div class="sw-card-header">
+                            <span class="sw-card-number">02</span>
+                            <span class="sw-card-title">Custom ML Model</span>
+                        </div>
+                        <div class="sw-card-text">
+                            The machine learning model is being trained from scratch — not fine-tuned
+                            from an existing model. For each ASL word in the vocabulary, roughly 100
+                            sample recordings are captured showing the sign performed at different heights,
+                            distances, angles, and hand spacings. This variation is intentional — it
+                            teaches the model to recognize the sign no matter how the signer holds their
+                            hands, making it work in real-world conditions where no two people sign
+                            exactly the same way.
+                        </div>
+                        <div class="sw-tags">
+                            <span class="sw-tag">Trained From Scratch</span>
+                            <span class="sw-tag">~100 Samples Per Word</span>
+                            <span class="sw-tag">Variation-Tolerant</span>
+                        </div>
+                    </div>
+                    <div class="sw-card">
+                        <div class="sw-card-header">
+                            <span class="sw-card-number">03</span>
+                            <span class="sw-card-title">Output Engine</span>
+                        </div>
+                        <div class="sw-card-text">
+                            Once the model classifies a sign, the recognized English word is sent back
+                            to the glasses. The output engine handles two channels: text-to-speech for
+                            the temple speakers, and text rendering for the lens projector. The wearer
+                            can configure which outputs are active from the pocket unit — both by default,
+                            audio-only for blind users, or text-only for deaf users.
+                        </div>
+                        <div class="sw-tags">
+                            <span class="sw-tag">Text-to-Speech</span>
+                            <span class="sw-tag">Lens Projection</span>
+                            <span class="sw-tag">Configurable Output</span>
+                        </div>
+                    </div>
+                    <div class="sw-card">
+                        <div class="sw-card-header">
+                            <span class="sw-card-number">04</span>
+                            <span class="sw-card-title">Language Support</span>
+                        </div>
+                        <div class="sw-card-text">
+                            The initial prototype outputs translations in English. Because the system
+                            translates ASL signs into text first and then converts that text to audio,
+                            adding support for other output languages in the future would only require
+                            swapping the text-to-speech language — the hand detection and sign
+                            classification pipeline would remain the same.
+                        </div>
+                        <div class="sw-tags">
+                            <span class="sw-tag">English (Initial)</span>
+                            <span class="sw-tag">Multi-Language Ready</span>
+                            <span class="sw-tag">Modular Design</span>
                         </div>
                     </div>
                 </div>
@@ -216,65 +425,31 @@
             <!-- ═══════════════════ PROGRESS ═══════════════════ -->
             <section class="section" id="progress">
                 <div class="section-header">
-                    <span class="section-number">03</span>
+                    <span class="section-number">05</span>
                     <div class="section-line"></div>
                     <h2 class="section-title">Current Progress</h2>
                 </div>
+
+                <div class="progress-context">
+                    Vision Voice started as a concept at the VHHS AI Hackathon 2025 where it placed
+                    3rd. The hackathon demo was a proof-of-concept — a camera connected to a laptop
+                    running code that could detect thumbs-up and thumbs-down gestures and speak the
+                    result through speakers. The judges encouraged continuing the project. It is now
+                    being developed as a full wearable prototype for the upcoming VHHS 24-hour
+                    hackathon in approximately one month.
+                </div>
+
                 <div class="timeline">
                     <div class="timeline-item completed">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-status">Completed</div>
-                            <div class="timeline-title">3D-Printed Glasses Prototype</div>
+                            <div class="timeline-title">Proof-of-Concept Demo</div>
                             <div class="timeline-desc">
-                                Designed and printed custom glasses frame housing the micro-camera,
-                                transmitter cavity, speaker channels, and display mount. Multiple
-                                iterations for fit and component clearance.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item completed">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-status">Completed</div>
-                            <div class="timeline-title">Hand Landmark Detection</div>
-                            <div class="timeline-desc">
-                                Integrated micro-camera with MediaPipe to capture and extract real-time
-                                3D hand landmarks (21 points per hand) from live video feed.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item completed">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-status">Completed</div>
-                            <div class="timeline-title">ASL Classification Model</div>
-                            <div class="timeline-desc">
-                                Built and trained a machine learning model on Raspberry Pi 5 (8GB) to
-                                classify ASL signs from landmark data and map gestures to English words.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item completed">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-status">Completed</div>
-                            <div class="timeline-title">Wireless Data Relay</div>
-                            <div class="timeline-desc">
-                                Integrated wireless micro-transmitter to relay processed data between the
-                                glasses and pocket processing unit in real time with minimal latency.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item completed">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-status">Completed</div>
-                            <div class="timeline-title">Dual Output Integration</div>
-                            <div class="timeline-desc">
-                                Engineered audio output through temple-mounted speakers and text
-                                projection onto the lens micro-display — both channels working
-                                simultaneously from classified output.
+                                Built a working demo at the VHHS AI Hackathon 2025 (24 hours). Camera
+                                connected to a Mac running OpenCV-based hand detection. Could recognize
+                                thumbs-up and thumbs-down gestures and output the result as spoken audio.
+                                Placed 3rd. Judges encouraged continuing the project into a full wearable.
                             </div>
                         </div>
                     </div>
@@ -282,63 +457,62 @@
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
                             <div class="timeline-status">In Progress</div>
-                            <div class="timeline-title">Refinement & Optimization</div>
+                            <div class="timeline-title">Research & Component Selection</div>
                             <div class="timeline-desc">
-                                Currently refining recognition accuracy, reducing inference latency,
-                                improving hardware packaging, and enhancing the overall wearable
-                                experience for practical daily use.
+                                Currently researching and sourcing all hardware components — ZeroCam,
+                                ESP32, micro-projector, speakers, PETG filament, and wiring. Evaluating
+                                camera mount position (bridge vs temple), wireless transmission approach,
+                                and micro-projector options that fit the budget.
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <!-- ═══════════════════ TECH STACK ═══════════════════ -->
-            <section class="section" id="tech">
-                <div class="section-header">
-                    <span class="section-number">04</span>
-                    <div class="section-line"></div>
-                    <h2 class="section-title">Tech Stack</h2>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">Hardware</div>
-                        <div class="skill-list">
-                            Raspberry Pi 5 (8GB)<br>
-                            Micro-Camera Module<br>
-                            Wireless Micro-Transmitter<br>
-                            Temple Speakers<br>
-                            Lens Micro-Display
+                    <div class="timeline-item upcoming">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-status">Upcoming</div>
+                            <div class="timeline-title">CAD Design & Frame Printing</div>
+                            <div class="timeline-desc">
+                                Design the glasses frame in CAD to house the camera, ESP32, speakers,
+                                projector, and wiring channels. Print in black PETG and iterate on fit,
+                                weight, and comfort until the frame feels like normal glasses.
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">Software</div>
-                        <div class="skill-list">
-                            Python<br>
-                            MediaPipe<br>
-                            OpenCV<br>
-                            TensorFlow / Keras<br>
-                            NumPy
+                    <div class="timeline-item upcoming">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-status">Upcoming</div>
+                            <div class="timeline-title">ML Model Training</div>
+                            <div class="timeline-desc">
+                                Record ~100 training samples per ASL word across varied hand positions
+                                and angles. Train the classification model from scratch to recognize 50
+                                to 100 words — enough vocabulary for a basic conversation. Test and
+                                refine accuracy.
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">Fabrication</div>
-                        <div class="skill-list">
-                            Onshape CAD<br>
-                            3D Printing (FDM)<br>
-                            Custom PCB Layout<br>
-                            Soldering<br>
-                            Iterative Prototyping
+                    <div class="timeline-item upcoming">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-status">Upcoming</div>
+                            <div class="timeline-title">Full System Integration</div>
+                            <div class="timeline-desc">
+                                Connect all components end-to-end: camera → ESP32 → wireless link →
+                                Raspberry Pi 5 → ML classification → audio output through speakers and
+                                text projection onto lens. Test the full pipeline in real time.
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">Comms</div>
-                        <div class="skill-list">
-                            Bluetooth / RF Link<br>
-                            Serial Protocol<br>
-                            Low-Latency Streaming<br>
-                            Pocket Unit ↔ Glasses<br>
-                            Real-Time Pipeline
+                    <div class="timeline-item upcoming">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-status">Upcoming</div>
+                            <div class="timeline-title">Hackathon Demo</div>
+                            <div class="timeline-desc">
+                                Present the working wearable prototype at the VHHS 24-hour hackathon.
+                                Live demonstration of real-time ASL-to-English translation through the
+                                glasses with both audio and text output.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -347,59 +521,86 @@
             <!-- ═══════════════════ ROADMAP ═══════════════════ -->
             <section class="section" id="roadmap">
                 <div class="section-header">
-                    <span class="section-number">05</span>
+                    <span class="section-number">06</span>
                     <div class="section-line"></div>
                     <h2 class="section-title">Roadmap</h2>
                 </div>
+
+                <div class="roadmap-context">
+                    Everything below is ordered by priority. The focus is getting a working 50–100 word
+                    prototype ready for the hackathon in one month. Post-hackathon goals are stretch targets.
+                </div>
+
                 <div class="activities-list">
                     <div class="activity-row roadmap-done">
                         <div class="activity-left">
-                            <span class="activity-name">✓ Core Prototype</span>
-                            <span class="activity-desc">Glasses frame, camera, ML model, transmitter, dual output</span>
-                        </div>
-                        <span class="activity-date">DONE</span>
-                    </div>
-                    <div class="activity-row roadmap-done">
-                        <div class="activity-left">
-                            <span class="activity-name">✓ Hackathon Demo</span>
-                            <span class="activity-desc">Live demonstration at VHHS AI Hackathon 2025 — 3rd Place finish</span>
+                            <span class="activity-name">✓ Proof-of-Concept</span>
+                            <span class="activity-desc">Thumbs-up/down detection with audio output — VHHS AI Hackathon 2025, 3rd Place</span>
                         </div>
                         <span class="activity-date">DONE</span>
                     </div>
                     <div class="activity-row roadmap-active">
                         <div class="activity-left">
-                            <span class="activity-name">→ Accuracy & Latency Optimization</span>
-                            <span class="activity-desc">Expanding training data, model tuning, reducing end-to-end delay</span>
-                        </div>
-                        <span class="activity-date">NOW</span>
-                    </div>
-                    <div class="activity-row roadmap-active">
-                        <div class="activity-left">
-                            <span class="activity-name">→ Hardware Miniaturization</span>
-                            <span class="activity-desc">Smaller PCB, improved cable routing, lighter frame revision</span>
+                            <span class="activity-name">→ Component Research & Sourcing</span>
+                            <span class="activity-desc">Selecting and ordering all hardware within ~$150 budget</span>
                         </div>
                         <span class="activity-date">NOW</span>
                     </div>
                     <div class="activity-row">
                         <div class="activity-left">
-                            <span class="activity-name">Expanded Vocabulary</span>
-                            <span class="activity-desc">Support for full ASL alphabet, common phrases, and dynamic gestures</span>
+                            <span class="activity-name">CAD Design & 3D Print Frame</span>
+                            <span class="activity-desc">Design glasses housing in CAD, print in black PETG, iterate on fit</span>
                         </div>
                         <span class="activity-date">NEXT</span>
                     </div>
                     <div class="activity-row">
                         <div class="activity-left">
-                            <span class="activity-name">User Testing</span>
-                            <span class="activity-desc">Field testing with ASL users and accessibility feedback loops</span>
+                            <span class="activity-name">Train ML Model (50–100 words)</span>
+                            <span class="activity-desc">Record ~100 samples per word with varied positions, train from scratch</span>
                         </div>
-                        <span class="activity-date">PLANNED</span>
+                        <span class="activity-date">NEXT</span>
                     </div>
                     <div class="activity-row">
                         <div class="activity-left">
-                            <span class="activity-name">Open Source Release</span>
-                            <span class="activity-desc">Publishing CAD files, ML model, and build guide for the community</span>
+                            <span class="activity-name">Wireless Link Setup</span>
+                            <span class="activity-desc">ESP32 on glasses transmitting landmark data to Raspberry Pi 5 pocket unit</span>
                         </div>
-                        <span class="activity-date">PLANNED</span>
+                        <span class="activity-date">NEXT</span>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">Audio + Projection Output</span>
+                            <span class="activity-desc">Temple speakers and micro-projector lens display integrated and working</span>
+                        </div>
+                        <span class="activity-date">NEXT</span>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">Full Integration & Testing</span>
+                            <span class="activity-desc">End-to-end pipeline running in real time on the wearable</span>
+                        </div>
+                        <span class="activity-date">NEXT</span>
+                    </div>
+                    <div class="activity-row">
+                        <div class="activity-left">
+                            <span class="activity-name">Hackathon Demo</span>
+                            <span class="activity-desc">Live wearable demonstration at VHHS 24-hour hackathon</span>
+                        </div>
+                        <span class="activity-date">~1 MONTH</span>
+                    </div>
+                    <div class="activity-row roadmap-future">
+                        <div class="activity-left">
+                            <span class="activity-name">Expanded Vocabulary</span>
+                            <span class="activity-desc">Scale beyond 100 words toward full conversational ASL coverage</span>
+                        </div>
+                        <span class="activity-date">POST-HACK</span>
+                    </div>
+                    <div class="activity-row roadmap-future">
+                        <div class="activity-left">
+                            <span class="activity-name">Multi-Language Output</span>
+                            <span class="activity-desc">Add additional output languages beyond English</span>
+                        </div>
+                        <span class="activity-date">POST-HACK</span>
                     </div>
                 </div>
             </section>
@@ -408,7 +609,7 @@
 
         <footer class="footer">
             <p class="footer-text">
-                Vision Voice <span>—</span> Basil Adam <span>—</span> Real-Time ASL Translation Glasses
+                Vision Voice <span>—</span> Basil Adam <span>—</span> Wearable ASL-to-English Translation Glasses
             </p>
         </footer>
 
